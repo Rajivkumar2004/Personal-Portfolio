@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="box-border min-h-screen overflow-x-hidden">
+    <div class="min-h-screen bg-cover bg-center" style="background-image:url('https://i.pinimg.com/1200x/98/85/f3/9885f38dc02d4aad94ffe92bfc728894.jpg');">
+      <nav class="flex items-center justify-between px-4 py-4 text-white sm:px-6 lg:px-10 xl:px-16">
+        <img src="https://i.pinimg.com/1200x/19/4d/7d/194d7d41db434ae563ff891bdb4ee0a6.jpg" class="h-12 cursor-pointer rounded-xl" alt="logo" />
+
+        <ul class="hidden gap-6 font-serif tracking-wide md:flex">
+          <li><a href="#home" class="hover:uppercase">Home</a></li>
+          <li><a href="#about" class="hover:uppercase">About</a></li>
+          <li><a href="#skills" class="hover:uppercase">Skills</a></li>
+          <li><a href="#contact" class="hover:uppercase">Contact</a></li>
+        </ul>
+
+        <button class="text-3xl md:hidden" onclick="toggleMenu()">&#9776;</button>
+      </nav>
+
+      <div id="mobileMenu" class="mx-4 hidden rounded-xl bg-black/70 p-4 text-white backdrop-blur-lg md:hidden">
+        <ul class="flex flex-col gap-4 text-center font-serif">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+
+      <section id="home" class="flex min-h-[80vh] items-center justify-center px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div class="w-full max-w-7xl rounded-[40px] border border-white/30 p-6 shadow-2xl backdrop-blur-2xl sm:p-10 lg:p-16">
+          <div class="font-serif break-words text-white">
+            <h1 class="mb-4 text-4xl tracking-widest lg:text-6xl">PORTFOLIO</h1>
+            <p>Hello, my name is</p>
+            <h2 class="mt-2 text-3xl font-bold lg:text-5xl">RAJIV KUMAR</h2>
+            <p class="mt-2">And I'm a Web Developer</p>
+            <button class="hover:under mt-6 rounded-xl bg-black px-6 py-3"><a href="https://wa.me/917679907163">Hire Me</a></button>
+            <button class="mt-6 rounded-xl bg-black px-6 py-3 hover:underline"> <a href="https://drive.google.com/uc?export=download&id=1jdC8QRs80EjdaiDea3hV85Mt8jiTqRPG">Download CV</a></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="my-20 px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div class="mx-auto w-full max-w-[90rem] rounded-[40px] border border-white/30 p-6 shadow-2xl backdrop-blur-2xl sm:p-10 lg:p-16">
+          <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+            <div class="flex justify-center">
+              <img src="mypic1.jpeg" alt="Rajiv Kumar" class="h-56 w-56 rounded-full border border-white/30 object-cover sm:h-64 sm:w-64" />
+            </div>
+
+            <div class="font-serif break-words text-white">
+              <h2 class="mb-4 text-3xl font-bold sm:text-center sm:text-4xl md:text-center lg:text-start">About Us</h2>
+              <p class="leading-relaxed">My name is Rajiv Kumar, and I am currently pursuing Bachelor of Computer Applications (BCA) in my 6th semester. I am passionate about web development and enjoy building clean, responsive websites using HTML, CSS, Tailwind CSS, and basic JavaScript. I am focused on improving my technical skills, learning new technologies, and preparing myself for real-world software development projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="my-20 px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div class="mx-auto w-full max-w-[90rem] rounded-[40px] border border-white/30 p-6 shadow-2xl backdrop-blur-xl sm:p-10 lg:p-16">
+          <h2 class="mb-10 text-center text-3xl font-bold text-white sm:text-4xl">Skills</h2>
+
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-2xl border border-white/20 bg-black/20 p-6 break-words text-white backdrop-blur-sm">
+              <h3 class="mb-3 text-xl font-semibold">Frontend Development</h3>
+              <ul class="list-inside list-disc space-y-1 text-sm">
+                <li>HTML5</li>
+                <li>CSS & Tailwind CSS</li>
+                <li>Responsive UI</li>
+                <li>Mobile-first design</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-white/20 bg-black/20 p-6 break-words text-white backdrop-blur-sm">
+              <h3 class="mb-3 text-xl font-semibold">Programming Skills</h3>
+              <ul class="list-inside list-disc space-y-1 text-sm">
+                <li>JavaScript basics</li>
+                <li>Form validation</li>
+                <li>DOM manipulation</li>
+                <li>Interactive UI</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-white/20 bg-black/20 p-6 break-words text-white backdrop-blur-sm">
+              <h3 class="mb-3 text-xl font-semibold">Tools & Technologies</h3>
+              <ul class="list-inside list-disc space-y-1 text-sm">
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>DevTools</li>
+                <li>Debugging basics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="px-4 py-40 sm:px-6 lg:px-10 xl:px-16">
+        <div class="mx-auto flex max-w-[90rem] flex-col gap-10 lg:flex-row">
+          <div class="w-full rounded-2xl border border-white/20 bg-black/30 px-12 py-10 shadow-2xl backdrop-blur-xl">
+            <h2 class="mb-6 text-center text-3xl font-black text-white">Contact Us</h2>
+            <form class="space-y-4 text-white">
+              <div>
+                <label>NAME</label>
+                <input class="w-full rounded border px-2 py-1 text-black" type="text" placeholder="Full Name" />
+              </div>
+              <div>
+                <label>EMAIL</label>
+                <input class="w-full rounded border px-2 py-1 text-black" type="email" placeholder="Email Address" />
+              </div>
+              <div>
+                <label>MESSAGE</label>
+                <textarea class="w-full rounded border px-2 py-1 text-black" placeholder="Message"></textarea>
+              </div>
+              <button class="w-full rounded bg-[#B9C7A8] py-3 font-semibold">Submit</button>
+            </form>
+          </div>
+          <div class="w-full rounded-2xl bg-cover bg-center p-8 shadow-2xl backdrop-blur-xl sm:p-12" style="background-image:url('https://i.pinimg.com/736x/61/33/1b/61331bf9d77178110266d9284a74ec35.jpg');">
+            <h1 class="mb-10 text-center text-3xl font-extrabold text-white">Get In Touch</h1>
+
+            <div class="space-y-8 font-serif text-white">
+
+              <div class="flex items-center gap-5">
+                <div class="flex h-14 min-h-[56px] w-14 min-w-[56px] shrink-0 items-center justify-center rounded-full bg-white">
+                  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="h-8 w-8 object-contain" />
+                </div>
+
+                <a href="https://www.linkedin.com/in/rajiv-kumar-5159442a9" target="_blank" class="w-full border-b border-white/60 pb-1 break-all hover:text-gray-300"> linkedin.com/in/rajiv-kumar </a>
+              </div>
+
+              <div class="flex items-center gap-5">
+                <div class="flex h-14 min-h-[56px] w-14 min-w-[56px] shrink-0 items-center justify-center rounded-full bg-white">
+                  <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="h-8 w-8 object-contain" />
+                </div>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajivkumar81588@gmail.com" class="w-full border-b border-white/60 pb-1 break-all hover:text-gray-300"> rajivkumar81588@gmail.com </a>
+              </div>
+
+              <div class="flex items-center gap-5">
+                <div class="flex h-14 min-h-[56px] w-14 min-w-[56px] shrink-0 items-center justify-center rounded-full bg-white">
+                  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="h-8 w-8 object-contain" />
+                </div>
+
+                <a href="https://wa.me/917679907163" target="_blank" class="w-full border-b border-white/60 pb-1 hover:text-gray-300"> +91 76799 07163 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex h-20 items-center justify-evenly border-t border-white font-serif text-white backdrop-blur">
+        <span><a href="#home">@Rajiv Kumar</a></span>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </footer>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+    
+  </body>
+</html>
